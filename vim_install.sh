@@ -18,8 +18,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 touch ~/.vimrc
 
 #copy content of vimrc to .vimrc only (alternatively, can manually copy content):
-#cp ./vimrc ~/.vim/vimrc
-#ln ~/.vimrc ~/.vim/vimrc
+cp ./vimrc ~/.vim/vimrc
+ln ~/.vimrc ~/.vim/vimrc
 
 #install plugin
 vim +PluginInstall +qall
