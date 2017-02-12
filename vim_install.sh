@@ -20,6 +20,7 @@ touch ~/.vimrc
 #copy content of vimrc to .vimrc only (alternatively, can manually copy content):
 cp ./vimrc ~/.vim/vimrc
 ln ~/.vimrc ~/.vim/vimrc
+cp ./.ycm_extra_conf.py ~/.vim
 
 #install plugin
 vim +PluginInstall +qall
