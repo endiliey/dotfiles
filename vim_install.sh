@@ -24,6 +24,7 @@ ln ~/.vimrc ~/.vim/vimrc
 #install plugin
 vim +PluginInstall +qall
 
-echo "You need to manually install YoucompleteMe plugin"
+echo "You need to manually install YoucompleteMe plugin for python and c-lang family"
 echo "https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64"
+echo "Don't forget .ycm_extra_conf.py"
 echo "Enjoy Vim !"
