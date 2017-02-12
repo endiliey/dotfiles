@@ -5,12 +5,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 "git wrapper for vim
 Plugin 'tpope/vim-fugitive'
 
-"code folding"
+"code folding
 Plugin 'tmhedberg/SimpylFold'
 
 "auto-completion
@@ -81,17 +81,11 @@ au BufNewFile,BufRead *.py set textwidth=79
 let python_highlight_all=1
 syntax on
 
-" Display tabs at the beginning of a line in Python mode as bad.
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
-
-"make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 "set default file encoding to UTF-8
 set encoding=utf-8
 
 " line numbering
-set number
+set nu
 
 "ignore files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
@@ -113,3 +107,19 @@ EOF
 autocmd FileType python set autoindent
 
 " ------- END OF Python Configuration ------ 
+
+" color schemes
+syntax enable
+let g:solarized_termcolors=256
+set t_Co=256
+set background=dark
+colorscheme solarized
+
+"enable toggling
+call togglebg#map("<F5>")
+
+"I don't like swap files
+set noswapfile
+
+" Always show statusline
+set laststatus=2
