@@ -12,4 +12,9 @@ Clone setup files
 git clone https://github.com/endiliey/vim-setup.git
 ```
 
+Run bash script
+```
+./vim_install.sh
+```
+
 Enjoy Vim !
