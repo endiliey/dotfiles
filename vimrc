@@ -123,3 +123,15 @@ set noswapfile
 
 " Always show statusline
 set laststatus=2
+
+" cpp indentation
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+
+" compiling and running program from vim for cpp
+map <F8> :!g++ -std=c++11 % && ./a.out <CR> 
+
+" default auto-completion for C family (YCM)
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
