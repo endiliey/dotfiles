@@ -129,6 +129,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab
+set textwidth=79
 
 " compiling and running program from vim for cpp
 map <F8> :!g++ -std=c++11 % && ./a.out <CR> 
