@@ -86,6 +86,7 @@ source /home/engshare/admin/scripts/vim/biggrep.vim
 "nerd tree automatically start
 "autocmd vimenter * NERDTree
 nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :NERDTreeFind<CR>
 
 "PHP autocompletion
 let g:hack#omnifunc=1
