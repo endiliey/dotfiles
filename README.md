@@ -10,11 +10,12 @@ Clone setup files
 
 ```
 git clone https://github.com/endiliey/vim-setup.git
+cd vim-setup
 ```
 
 Run bash script
 ```
-./vim_install.sh
+sudo bash vim_install.sh
 ```
 
 Enjoy Vim !
