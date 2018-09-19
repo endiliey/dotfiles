@@ -1,5 +1,4 @@
-# vim-setup
-my vim setup and configuration file
+# dotfiles
 
 Requirements:
 ```
@@ -17,5 +16,3 @@ Run bash script
 ```
 sudo bash install.sh
 ```
-
-Enjoy Vim !
