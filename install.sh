@@ -20,8 +20,8 @@ function setup_git() {
 }
 
 function setup_aliases() {
-    sudo cat aliases >> ~/.bash_profile
-    source ~/.bash_profile
+    sudo cat aliases >> ~/.bashrc
+    source ~/.bashrc
 }
 
 function setup_vim() {
