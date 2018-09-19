@@ -9,13 +9,13 @@ sudo apt install git
 Clone setup files
 
 ```
-git clone https://github.com/endiliey/vim-setup.git
-cd vim-setup
+git clone https://github.com/endiliey/dotfiles.git
+cd dotfiles
 ```
 
 Run bash script
 ```
-sudo bash vim_install.sh
+sudo bash install.sh
 ```
 
 Enjoy Vim !

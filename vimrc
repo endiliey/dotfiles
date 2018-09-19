@@ -1,8 +1,12 @@
-" Plugins
 set nocompatible
-filetype off
+syntax enable
+filetype plugin indent on
+
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'altercation/vim-colors-solarized'
@@ -18,13 +22,12 @@ let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
 
 " color schemes
-syntax enable
-let g:solarized_termtrans = 1
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" let g:solarized_termtrans = 1
+" let g:solarized_termcolors=256
+" set background=dark
+" colorscheme solarized
 
-"split navigations
+" split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -52,7 +55,6 @@ set expandtab
 set noswapfile
 set textwidth=79
 
-filetype plugin indent on
 autocmd FileType javascript set ts=2 sts=2 sw=2
 autocmd FileType cpp set ts=4 sts=4 sw=4
 
