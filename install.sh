@@ -19,6 +19,12 @@ function setup_git() {
     fi
 }
 
+function setup_asciinema() {
+    sudo apt-add-repository ppa:zanchey/asciinema
+    sudo apt-get update
+    sudo apt-get install asciinema
+}
+
 function setup_aliases() {
     sudo cat aliases >> ~/.bashrc
     source ~/.bashrc
@@ -43,5 +49,8 @@ setup_aliases
 
 echo "setup vim.."
 setup_vim
+
+echo "setup asciinema.."
+setup_asciinema
 
 echo "Done !"
